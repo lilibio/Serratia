@@ -12,9 +12,9 @@ After identifying the distribution of T6SS across *Serratia* genomes, you can ca
 ## Usage
 
 ```shell
-python3 cdhit-to-matrix.py <input.txt> <output.txt>
+python3 cdhit-to-matrix.py <input.txt> <output_matrix.txt>
 ```
-You should rename 'output.txt' to 'orthologue_file.txt', which serves as the input file for Comparative_T6SS.py. This script identifies T6SS<sup>serratia-1b</sup>-associated orthologous proteins.
+According to the script annotations, prepare the 'orthologue_file.txt', which serves as the input file for Comparative_T6SS.py. This script identifies T6SS<sup>serratia-1b</sup>-associated orthologous proteins.
 
 ```shell
 python3 Comparative_T6SS.py <orthologue_file.txt> <presence_genomes.txt> <absence_genomes.txt>
