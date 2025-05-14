@@ -19,10 +19,10 @@ You should rename 'output.txt' to 'orthologue_file.txt', which serves as the inp
 ```shell
 python3 Comparative_T6SS.py <orthologue_file.txt> <presence_genomes.txt> <absence_genomes.txt>
 ```
-'presence_genomes.txt' and 'absence_genomes.txt' are lists of genome names  for T6SSserratia-1b+/-, respectively. After identifying orthologous groups that are statistically associated with the presence of T6SSserratia-1b, the find_connected.py script can be used to detect all adjacent proteins in these clusters.
+'presence_genomes.txt' and 'absence_genomes.txt' are lists of genome names  for T6SS<sup>serratia-1b</sup>+/-, respectively. After identifying orthologous groups that are statistically associated with the presence of T6SS<sup>serratia-1b</sup>, the find_connected.py script can be used to detect all adjacent proteins in these clusters.
 
 ```shell
-python3 findconnected.py <positive_ID>
+python3 find_connected.py <proteins_ID>
 ```
 
 You can find all the example files in Datasets documents.
