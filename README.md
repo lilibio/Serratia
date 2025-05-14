@@ -36,11 +36,18 @@ According to the script annotations, prepare the 'orthologue_file.txt', which se
 python3 Comparative_T6SS.py <orthologue_file.txt> <presence_genomes.txt> <absence_genomes.txt>
 ```
 **Example:** 
+orthologue_file.txt
 |Groups|   GCA_946228335.1 |GCA_030771795.1 |GCA_033365975.1 |GCA_016812305.1 |GCA_028616515.1| GCA_015999175.1| GCA_020887645|
 |:------------------------:| :---------: | :--------------------------: |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
 |Group1 | *     |  *  |    *   |    *  |     * |      *   |    *    |  
 |Group2 | GCA_946228335.1_26968_7_47_genomic_01651     |   *     |  *  |     *  |     *    |   *    |  *    | 
 
+**Example:** 
+presence_genomes.txt
+|Genomes|
+|:------------------------:|
+|GCA_000163595.1|
+|GCA_000264275.1|
 
 'presence_genomes.txt' and 'absence_genomes.txt' are lists of genome names  for T6SS<sup>serratia-1b</sup>+/-, respectively. After identifying orthologous groups that are statistically associated with the presence of T6SS<sup>serratia-1b</sup>, the find_connected.py script can be used to detect all adjacent proteins in these clusters.
 
